@@ -12,18 +12,28 @@ pokefile = "pokemon_data.json"
 
 
 def get_all_mons() -> List[Dict[str, int | str]]:
-    all_forms_url = POKE_API + "pokemon?limit=1025&offset=0"
-    request = Request(all_forms_url, headers={"User-Agent": "PokemonSpinner/1.0"})
+    all_mons = POKE_API + "pokemon?limit=1025&offset=0"
+    mon_request = Request(all_mons, headers={"User-Agent": "PokemonSpinner/1.0"})
 
-    with urlopen(request) as response:
+    with urlopen(mon_request) as response:
         payload = json.loads(response.read().decode("utf-8"))  # Bruh I'm never using Agent mode again
 
     mon_results = payload["results"]
-    pokemon_info = [
-        {
+    for mon in mon_results:
+        type_request = Request(mon["url"], headers={"User-Agent": "PokemonSpinner/1.0"})
+        with urlopen(type_request) as resp:
+            poke = json.loads(resp.read().decode("utf-8"))
+        types = []
+        type1 = poke["types"][0]["type"]["name"]
+        types.append(type1)
+        if len(poke["types"]) > 1:
+            type2 = poke["types"][1]["type"]["name"]
+            types.append(type2)
+        print(f"Types added: {types}")
+        pokemon_info = {
             "id": int(mon["url"].rstrip("/").split("/")[-1]),
             "name": mon["name"].capitalize(),
+            "types": types
         }
-        for mon in mon_results
-    ]
+        print(f"Pokemon added: {pokemon_info["name"]}")
     return pokemon_info

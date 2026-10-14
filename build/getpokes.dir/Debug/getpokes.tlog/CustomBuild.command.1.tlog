@@ -1,0 +1,10 @@
+^S:\CODINGPROJECTS\POKEMONSPINNER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/CodingProjects/PokemonSpinner -BS:/CodingProjects/PokemonSpinner/build --check-stamp-file S:/CodingProjects/PokemonSpinner/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

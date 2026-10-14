@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="S:\CodingProjects\PokemonSpinner\build\CMakeFiles\fddff74b7370716bb9ba7a13dacfb70f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{49B2BFB1-7F6B-3442-A868-2CE9E1B00B0B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
