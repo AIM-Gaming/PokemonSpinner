@@ -104,7 +104,7 @@ events:
       The output was:
       0
       MSBuild version 18.11.0-1.26475.11+3cde5c8ec for .NET Framework
-      Build started 2026-10-13 7:35:24 PM.
+      Build started 2026-10-14 2:40:01 PM.
       
       Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\4.4.4\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -133,7 +133,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.01
+      Time Elapsed 00:00:02.05
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -2540,7 +2540,7 @@ events:
       The output was:
       0
       MSBuild version 18.11.0-1.26475.11+3cde5c8ec for .NET Framework
-      Build started 2026-10-13 7:35:26 PM.
+      Build started 2026-10-14 2:40:04 PM.
       
       Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\4.4.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -2569,7 +2569,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.93
+      Time Elapsed 00:00:02.11
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -3804,8 +3804,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-wdzt82"
-      binary: "S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-wdzt82"
+      source: "S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-9h9g88"
+      binary: "S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-9h9g88"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -3819,39 +3819,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-wdzt82'
+        Change Dir: 'S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-9h9g88'
         
-        Run Build Command(s): "S:/Program Files/Microsoft Visual Studio/Build Tools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2abf0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "S:/Program Files/Microsoft Visual Studio/Build Tools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dbd4e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.11.0-1.26475.11+3cde5c8ec for .NET Framework
-        Build started 2026-10-13 7:35:28 PM.
+        Build started 2026-10-14 2:40:08 PM.
         
-        Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdzt82\\cmTC_2abf0.vcxproj" on node 1 (default targets).
+        Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9h9g88\\cmTC_dbd4e.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdzt82\\Debug\\".
-          Creating directory "cmTC_2abf0.dir\\Debug\\cmTC_2abf0.tlog\\".
+          Creating directory "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9h9g88\\Debug\\".
+          Creating directory "cmTC_dbd4e.dir\\Debug\\cmTC_dbd4e.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_2abf0.dir\\Debug\\cmTC_2abf0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_2abf0.dir\\Debug\\cmTC_2abf0.tlog\\unsuccessfulbuild".
+          Creating "cmTC_dbd4e.dir\\Debug\\cmTC_dbd4e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_dbd4e.dir\\Debug\\cmTC_dbd4e.tlog\\unsuccessfulbuild".
         ClCompile:
-          S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2abf0.dir\\Debug\\\\" /Fd"cmTC_2abf0.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
+          S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_dbd4e.dir\\Debug\\\\" /Fd"cmTC_dbd4e.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36260 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2abf0.dir\\Debug\\\\" /Fd"cmTC_2abf0.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_dbd4e.dir\\Debug\\\\" /Fd"cmTC_dbd4e.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdzt82\\Debug\\cmTC_2abf0.exe" /INCREMENTAL /ILK:"cmTC_2abf0.dir\\Debug\\cmTC_2abf0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-wdzt82/Debug/cmTC_2abf0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-wdzt82/Debug/cmTC_2abf0.lib" /MACHINE:X64  /machine:x64 cmTC_2abf0.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_2abf0.vcxproj -> S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdzt82\\Debug\\cmTC_2abf0.exe
+          S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9h9g88\\Debug\\cmTC_dbd4e.exe" /INCREMENTAL /ILK:"cmTC_dbd4e.dir\\Debug\\cmTC_dbd4e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-9h9g88/Debug/cmTC_dbd4e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-9h9g88/Debug/cmTC_dbd4e.lib" /MACHINE:X64  /machine:x64 cmTC_dbd4e.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_dbd4e.vcxproj -> S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9h9g88\\Debug\\cmTC_dbd4e.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_2abf0.dir\\Debug\\cmTC_2abf0.tlog\\unsuccessfulbuild".
-          Touching "cmTC_2abf0.dir\\Debug\\cmTC_2abf0.tlog\\cmTC_2abf0.lastbuildstate".
-        Done Building Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdzt82\\cmTC_2abf0.vcxproj" (default targets).
+          Deleting file "cmTC_dbd4e.dir\\Debug\\cmTC_dbd4e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_dbd4e.dir\\Debug\\cmTC_dbd4e.tlog\\cmTC_dbd4e.lastbuildstate".
+        Done Building Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9h9g88\\cmTC_dbd4e.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.01
+        Time Elapsed 00:00:02.10
         
       exitCode: 0
   -
@@ -3864,7 +3864,7 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        link line: [  S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wdzt82\\Debug\\cmTC_2abf0.exe" /INCREMENTAL /ILK:"cmTC_2abf0.dir\\Debug\\cmTC_2abf0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-wdzt82/Debug/cmTC_2abf0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-wdzt82/Debug/cmTC_2abf0.lib" /MACHINE:X64  /machine:x64 cmTC_2abf0.dir\\Debug\\CMakeCCompilerABI.obj] ==> linker [S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe]
+        link line: [  S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9h9g88\\Debug\\cmTC_dbd4e.exe" /INCREMENTAL /ILK:"cmTC_dbd4e.dir\\Debug\\cmTC_dbd4e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-9h9g88/Debug/cmTC_dbd4e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-9h9g88/Debug/cmTC_dbd4e.lib" /MACHINE:X64  /machine:x64 cmTC_dbd4e.dir\\Debug\\CMakeCCompilerABI.obj] ==> linker [S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe]
         linker tool for 'C': S:/Program Files/Microsoft Visual Studio/Build Tools/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe 
         implicit libs: []
         implicit objs: []
@@ -3892,8 +3892,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-f0peen"
-      binary: "S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-f0peen"
+      source: "S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-xg0lxo"
+      binary: "S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-xg0lxo"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -3908,39 +3908,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-f0peen'
+        Change Dir: 'S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-xg0lxo'
         
-        Run Build Command(s): "S:/Program Files/Microsoft Visual Studio/Build Tools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3f422.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "S:/Program Files/Microsoft Visual Studio/Build Tools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3920d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.11.0-1.26475.11+3cde5c8ec for .NET Framework
-        Build started 2026-10-13 7:35:30 PM.
+        Build started 2026-10-14 2:40:12 PM.
         
-        Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f0peen\\cmTC_3f422.vcxproj" on node 1 (default targets).
+        Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xg0lxo\\cmTC_3920d.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f0peen\\Debug\\".
-          Creating directory "cmTC_3f422.dir\\Debug\\cmTC_3f422.tlog\\".
+          Creating directory "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xg0lxo\\Debug\\".
+          Creating directory "cmTC_3920d.dir\\Debug\\cmTC_3920d.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_3f422.dir\\Debug\\cmTC_3f422.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_3f422.dir\\Debug\\cmTC_3f422.tlog\\unsuccessfulbuild".
+          Creating "cmTC_3920d.dir\\Debug\\cmTC_3920d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3920d.dir\\Debug\\cmTC_3920d.tlog\\unsuccessfulbuild".
         ClCompile:
-          S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_3f422.dir\\Debug\\\\" /Fd"cmTC_3f422.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+          S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_3920d.dir\\Debug\\\\" /Fd"cmTC_3920d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36260 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_3f422.dir\\Debug\\\\" /Fd"cmTC_3f422.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_3920d.dir\\Debug\\\\" /Fd"cmTC_3920d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f0peen\\Debug\\cmTC_3f422.exe" /INCREMENTAL /ILK:"cmTC_3f422.dir\\Debug\\cmTC_3f422.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-f0peen/Debug/cmTC_3f422.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-f0peen/Debug/cmTC_3f422.lib" /MACHINE:X64  /machine:x64 cmTC_3f422.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_3f422.vcxproj -> S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f0peen\\Debug\\cmTC_3f422.exe
+          S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xg0lxo\\Debug\\cmTC_3920d.exe" /INCREMENTAL /ILK:"cmTC_3920d.dir\\Debug\\cmTC_3920d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-xg0lxo/Debug/cmTC_3920d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-xg0lxo/Debug/cmTC_3920d.lib" /MACHINE:X64  /machine:x64 cmTC_3920d.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_3920d.vcxproj -> S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xg0lxo\\Debug\\cmTC_3920d.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_3f422.dir\\Debug\\cmTC_3f422.tlog\\unsuccessfulbuild".
-          Touching "cmTC_3f422.dir\\Debug\\cmTC_3f422.tlog\\cmTC_3f422.lastbuildstate".
-        Done Building Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f0peen\\cmTC_3f422.vcxproj" (default targets).
+          Deleting file "cmTC_3920d.dir\\Debug\\cmTC_3920d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_3920d.dir\\Debug\\cmTC_3920d.tlog\\cmTC_3920d.lastbuildstate".
+        Done Building Project "S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xg0lxo\\cmTC_3920d.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.95
+        Time Elapsed 00:00:02.66
         
       exitCode: 0
   -
@@ -3953,7 +3953,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        link line: [  S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f0peen\\Debug\\cmTC_3f422.exe" /INCREMENTAL /ILK:"cmTC_3f422.dir\\Debug\\cmTC_3f422.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-f0peen/Debug/cmTC_3f422.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-f0peen/Debug/cmTC_3f422.lib" /MACHINE:X64  /machine:x64 cmTC_3f422.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe]
+        link line: [  S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"S:\\CodingProjects\\PokemonSpinner\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xg0lxo\\Debug\\cmTC_3920d.exe" /INCREMENTAL /ILK:"cmTC_3920d.dir\\Debug\\cmTC_3920d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-xg0lxo/Debug/cmTC_3920d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"S:/CodingProjects/PokemonSpinner/build/CMakeFiles/CMakeScratch/TryCompile-xg0lxo/Debug/cmTC_3920d.lib" /MACHINE:X64  /machine:x64 cmTC_3920d.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [S:\\Program Files\\Microsoft Visual Studio\\Build Tools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe]
         linker tool for 'CXX': S:/Program Files/Microsoft Visual Studio/Build Tools/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe 
         implicit libs: []
         implicit objs: []
@@ -3986,7 +3986,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "build/vcpkg_installed/x64-windows/share/cpr/cprConfig.cmake:28 (find_dependency)"
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
-      - "CMakeLists.txt:3 (find_package)"
+      - "CMakeLists.txt:7 (find_package)"
     mode: "path"
     variable: "ZLIB_INCLUDE_DIR"
     description: "Path to a file."
@@ -4082,7 +4082,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "build/vcpkg_installed/x64-windows/share/cpr/cprConfig.cmake:28 (find_dependency)"
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
-      - "CMakeLists.txt:3 (find_package)"
+      - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "ZLIB_LIBRARY_RELEASE"
     description: "Path to a library."
@@ -4182,7 +4182,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "build/vcpkg_installed/x64-windows/share/cpr/cprConfig.cmake:28 (find_dependency)"
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
-      - "CMakeLists.txt:3 (find_package)"
+      - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "ZLIB_LIBRARY_DEBUG"
     description: "Path to a library."
@@ -4280,7 +4280,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "build/vcpkg_installed/x64-windows/share/cpr/cprConfig.cmake:28 (find_dependency)"
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
-      - "CMakeLists.txt:3 (find_package)"
+      - "CMakeLists.txt:7 (find_package)"
     name: "CURL"
     configs:
       -
@@ -4450,7 +4450,7 @@ events:
     kind: "find_package-v1"
     backtrace:
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
-      - "CMakeLists.txt:3 (find_package)"
+      - "CMakeLists.txt:7 (find_package)"
     name: "cpr"
     configs:
       -
@@ -4589,15 +4589,11 @@ events:
         - "C:/Program Files/CMake"
         - "C:/Program Files/PokemonSpinner"
       CMAKE_FIND_ROOT_PATH: "S:/CodingProjects/PokemonSpinner/build/vcpkg_installed/x64-windows/debug;S:/CodingProjects/PokemonSpinner/build/vcpkg_installed/x64-windows"
-...
-
----
-events:
   -
     kind: "find_package-v1"
     backtrace:
       - "vcpkg/scripts/buildsystems/vcpkg.cmake:939 (_find_package)"
-      - "CMakeLists.txt:4 (find_package)"
+      - "CMakeLists.txt:8 (find_package)"
     name: "nlohmann_json"
     configs:
       -

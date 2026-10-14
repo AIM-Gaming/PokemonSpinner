@@ -1,13 +1,23 @@
-import json
 import subprocess
 from pathlib import Path
 
-import getmons
+LOAD_JSON = False
 
 if __name__ == "__main__":
-    output_path = Path(__file__).with_name("pokemon_data.json")
+    if LOAD_JSON:
+        output_path = Path(__file__).with_name("pokemon_data.json")
 
-    # with output_path.open("w", encoding="utf-8") as file:
-    #     json.dump(mons, file, indent=4)
+        print("Running C++ backend to fetch Pokemon data")
 
-    # print(f"Done! Wrote {len(mons)} Pokémon to {output_path}")
+        result = subprocess.run(
+            ["build/Debug/getpokes.exe"],
+            capture_output=True,
+            text=True
+        )
+        print("Finished loading pokemon_data.json")
+        if result.stdout:
+            print(result.stdout)
+        if result.stderr:
+            print("Errors: ", result.stderr)
+        print(f"Data saved to {output_path}")
+    

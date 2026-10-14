@@ -1,0 +1,552 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__ZLIB-Debug-a9c80591665eeb119126.json",
+					"name" : "CURL::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::libcurl_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__libcurl_shared-Debug-e69adcdbabd5e4ceaded.json",
+					"name" : "CURL::libcurl_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::win32_winsock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__win32_winsock-Debug-3294655a90b53a2c458d.json",
+					"name" : "CURL::win32_winsock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZLIB::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZLIB__ZLIB-Debug-7f263415b681b359e4fe.json",
+					"name" : "ZLIB::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpr::cpr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpr__cpr-Debug-ae5d7e1a28c7d8ce4236.json",
+					"name" : "cpr::cpr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json-Debug-3982e2273b3010044144.json",
+					"name" : "nlohmann_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json__nlohmann_json-Debug-bb92f758804d11c70e5b.json",
+					"name" : "nlohmann_json::nlohmann_json",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-b5805d5c08fd3d92def4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PokemonSpinner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-8faa8f799323a92e70a5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-2ad5ebcf7eaabdf6c324.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "getpokes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-getpokes-Debug-50f7c69e042e605e5ce2.json",
+					"name" : "getpokes",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__ZLIB-Release-a9c80591665eeb119126.json",
+					"name" : "CURL::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::libcurl_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__libcurl_shared-Release-1d8d23786399f1e35ae5.json",
+					"name" : "CURL::libcurl_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::win32_winsock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__win32_winsock-Release-3294655a90b53a2c458d.json",
+					"name" : "CURL::win32_winsock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZLIB::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZLIB__ZLIB-Release-7f263415b681b359e4fe.json",
+					"name" : "ZLIB::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpr::cpr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpr__cpr-Release-f1dd2faa6c370414de82.json",
+					"name" : "cpr::cpr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json-Release-3982e2273b3010044144.json",
+					"name" : "nlohmann_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json__nlohmann_json-Release-bb92f758804d11c70e5b.json",
+					"name" : "nlohmann_json::nlohmann_json",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-b5805d5c08fd3d92def4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PokemonSpinner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-8faa8f799323a92e70a5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-2ad5ebcf7eaabdf6c324.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "getpokes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-getpokes-Release-848b690cd7752f555cc9.json",
+					"name" : "getpokes",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__ZLIB-MinSizeRel-a9c80591665eeb119126.json",
+					"name" : "CURL::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::libcurl_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__libcurl_shared-MinSizeRel-1d8d23786399f1e35ae5.json",
+					"name" : "CURL::libcurl_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::win32_winsock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__win32_winsock-MinSizeRel-3294655a90b53a2c458d.json",
+					"name" : "CURL::win32_winsock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZLIB::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZLIB__ZLIB-MinSizeRel-7f263415b681b359e4fe.json",
+					"name" : "ZLIB::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpr::cpr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpr__cpr-MinSizeRel-f1dd2faa6c370414de82.json",
+					"name" : "cpr::cpr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json-MinSizeRel-3982e2273b3010044144.json",
+					"name" : "nlohmann_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json__nlohmann_json-MinSizeRel-bb92f758804d11c70e5b.json",
+					"name" : "nlohmann_json::nlohmann_json",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-MinSizeRel-b5805d5c08fd3d92def4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PokemonSpinner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-8faa8f799323a92e70a5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-2ad5ebcf7eaabdf6c324.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "getpokes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-getpokes-MinSizeRel-24aececb72f1c55f7d88.json",
+					"name" : "getpokes",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__ZLIB-RelWithDebInfo-a9c80591665eeb119126.json",
+					"name" : "CURL::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::libcurl_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__libcurl_shared-RelWithDebInfo-1d8d23786399f1e35ae5.json",
+					"name" : "CURL::libcurl_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::win32_winsock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__win32_winsock-RelWithDebInfo-3294655a90b53a2c458d.json",
+					"name" : "CURL::win32_winsock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZLIB::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZLIB__ZLIB-RelWithDebInfo-7f263415b681b359e4fe.json",
+					"name" : "ZLIB::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpr::cpr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpr__cpr-RelWithDebInfo-f1dd2faa6c370414de82.json",
+					"name" : "cpr::cpr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json-RelWithDebInfo-3982e2273b3010044144.json",
+					"name" : "nlohmann_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json__nlohmann_json-RelWithDebInfo-bb92f758804d11c70e5b.json",
+					"name" : "nlohmann_json::nlohmann_json",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-b5805d5c08fd3d92def4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PokemonSpinner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-8faa8f799323a92e70a5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-2ad5ebcf7eaabdf6c324.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "getpokes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-getpokes-RelWithDebInfo-72f3c0691cbb061bd9d4.json",
+					"name" : "getpokes",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "S:/CodingProjects/PokemonSpinner/build",
+		"source" : "S:/CodingProjects/PokemonSpinner"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	}
+}
