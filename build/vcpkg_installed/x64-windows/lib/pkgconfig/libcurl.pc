@@ -34,8 +34,8 @@ URL: https://curl.se/
 Description: Library to transfer files with HTTP, FTP, etc.
 License: curl
 Copyright: Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
-Version: 8.22.0
-Source: https://curl.se/download/curl-8.22.0.tar.gz
+Version: 8.23.0
+Source: https://curl.se/download/curl-8.23.0.tar.gz
 Requires.private: zlib
 Libs: "-L${libdir}" -llibcurl
 Libs.private: -lbcrypt -ladvapi32 -lcrypt32 -lsecur32 -lws2_32 -liphlpapi

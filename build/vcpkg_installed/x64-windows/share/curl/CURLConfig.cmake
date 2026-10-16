@@ -181,7 +181,7 @@ if(NOT TARGET CURL::libcurl)
 endif()
 
 # For compatibility with CMake's FindCURL.cmake
-set(CURL_VERSION_STRING "8.22.0")
+set(CURL_VERSION_STRING "8.23.0")
 set(CURL_LIBRARIES CURL::libcurl)
 set(CURL_LIBRARIES_PRIVATE "${VCPKG_IMPORT_PREFIX}/lib/z.lib;bcrypt;advapi32;crypt32;secur32;ws2_32;iphlpapi")
 set(CURL_LIBRARIES_PRIVATE "")

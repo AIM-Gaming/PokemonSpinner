@@ -6,11 +6,11 @@
   [
     {
       "algorithm" : "SHA512",
-      "checksumValue" : "6284a82c908329fda4b5a8c2efe409bf477a1fd79a0b71c04ae62ee407a4f00751722e98c1b73c728b0b79ee032eed1d1903876783c48cc6be71166619c025a7"
+      "checksumValue" : "e1003f374675a6ae50463995a6c705208c4247120093f1fcccf030847161235b3dfc0e40927114ccbc5b4530893990ccb96ec15400ffe4bcb275d26a0499f10e"
     }
   ],
   "copyrightText" : "NOASSERTION",
-  "downloadLocation" : "git+https://github.com/curl/curl@curl-8_22_0",
+  "downloadLocation" : "git+https://github.com/curl/curl@curl-8_23_0",
   "licenseConcluded" : "NOASSERTION",
   "licenseDeclared" : "NOASSERTION",
   "name" : "curl/curl"

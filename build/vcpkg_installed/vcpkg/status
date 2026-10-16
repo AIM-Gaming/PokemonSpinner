@@ -23,14 +23,13 @@ Description: A compression library
 Status: install ok installed
 
 Package: curl
-Version: 8.22.0
-Port-Version: 1
+Version: 8.23.0
 Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 1485d7aad9ebf8daf6c3196111067565b0a527cb7376636637de9901525aa58a
+Abi: 5d8bb1cf9f291fd5bb3b9cf39e0a25db7fcc533a2295afa576d772c93354b36f
 Description: A library for transferring data with URLs
-Default-Features: non-http, ssl
+Default-Features: ssl
 Status: install ok installed
 
 Package: curl
@@ -38,7 +37,7 @@ Feature: non-http
 Architecture: x64-windows
 Multi-Arch: same
 Description: Enables protocols beyond HTTP/HTTPS/HTTP2/HTTP3
-Status: install ok installed
+Status: purge ok not-installed
 
 Package: curl
 Feature: ssl
@@ -59,7 +58,7 @@ Version: 1.14.2
 Depends: curl, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: be8d2b31ae42265094bb7276c1e8c0a33a04d1d1fc9bd27728fe3d90c166b02d
+Abi: fd3e9886712d56c34aed21ee933edfb726059e08e646526e7cbbec2b82f26635
 Description: C++ Requests is a simple wrapper around libcurl inspired by the excellent Python Requests project.
 Default-Features: ssl
 Status: install ok installed
