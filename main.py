@@ -1,5 +1,6 @@
 import subprocess
 from pathlib import Path
+from app import SpinnerApp
 
 LOAD_JSON = False
 
@@ -20,4 +21,7 @@ if __name__ == "__main__":
         if result.stderr:
             print("Errors: ", result.stderr)
         print(f"Data saved to {output_path}")
+
+    app = SpinnerApp()
+    app.run()
     
