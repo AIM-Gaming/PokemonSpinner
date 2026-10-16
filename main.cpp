@@ -3,6 +3,7 @@
 #include <fstream>
 #include <vector>
 #include <future>
+#include <algorithm>
 #include <nlohmann/json.hpp>
 
 using namespace std;
@@ -32,8 +33,12 @@ vector<json> getAllMons(string api);
     string capitalizeStr(string str) {
         if (!str.empty()) {
             str[0] = toupper(str[0]);
-            for (size_t i = 1; i < str.length(); ++i) {
-                str[i] = tolower(str[i]);
+            for (size_t i = 1; i < str.length(); ++i) {  // Check the rest of the string
+                if (str[i - 1] == ' ') {
+                    str[i] = toupper(str[i]);  // Capitalize if the previous character was a space
+                } else {
+                    str[i] = tolower(str[i]);  // Otherwise, lowercase it
+                }
             }
         }
         return str;
@@ -88,7 +93,15 @@ vector<json> getAllMons(string api) {
                 size_t lastSlash = cleanUrl.find_last_of('/');
                 int pokeID = stoi(cleanUrl.substr(lastSlash + 1));
 
-                string pokeName = capitalizeStr(results[i]["name"]);
+                string pokeName = results[i]["name"];
+                for (char &ch : pokeName) {
+                    if (pokeName.find(ch)) {
+                        if (ch == '-' && !pokeName.find(ch) == pokeName.length() - 2) {
+                            ch = ' ';  // Protects mons like Nidoran-F while editing others like Iron Hands
+                        }
+                    }
+                }
+                pokeName = capitalizeStr(pokeName);
                 cout << "Pokemon added: " << pokeName << endl;
 
                 // Construct JSON object

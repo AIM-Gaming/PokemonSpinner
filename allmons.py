@@ -2,9 +2,9 @@ from kivy.uix.screenmanager import Screen
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.button import Button
 from kivy.uix.label import Label
-from kivy.animation import Animation
 
 from wheel import PrizeWheel
+from typesearch import TypeSearch
 
 import json
 
@@ -17,7 +17,10 @@ class AllMons(Screen):
 
         with open("pokemon_data.json", "r", encoding="utf-8") as file:
             data = json.load(file)
-        pokemon = self.load_mon_list(data)
+        pokemon = self.load_mon_names(data)
+        self.data = data
+        self.all_names = pokemon
+        types = {t for mon in data for t in mon["types"]}
         
         self.spinner = PrizeWheel(items=pokemon, pos_hint={"center_x": 0.4})
         self.layout.add_widget(self.spinner)
@@ -42,13 +45,29 @@ class AllMons(Screen):
         self.spin_btn.bind(on_release=self.spin)
         self.layout.add_widget(self.spin_btn)
 
-    def load_mon_list(self, pokedata):
+        self.type_search = TypeSearch(types, pos_hint={"center_x": 0.8, "top": 0.9})
+        self.type_search.bind(on_type_selected=self.apply_filter)
+        self.layout.add_widget(self.type_search)
+
+    def load_mon_names(self, pokedata):
         pokelist = []
         for mon in pokedata:
             pokelist.append(mon["name"])
         return pokelist  # 1025 slices
 
     def spin(self, *args):
-        # if Animation.have_properties_to_animate(self.spinner):
-        #     return
         self.spinner.spin()
+
+    def filter_type(self, pdict, ptype: str):
+        ptype = ptype.lower()  # To get the lowercase types from pokemon{}
+        pokelist = []
+        for mon in pdict:
+            if ptype in mon["types"]:
+                pokelist.append(mon["name"])
+            else:
+                continue
+        return pokelist
+
+    def apply_filter(self, instance, ptype):
+        names = self.filter_type(self.data, ptype) if ptype else self.all_names
+        self.spinner.set_items(names)
