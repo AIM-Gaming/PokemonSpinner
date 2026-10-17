@@ -4,6 +4,7 @@ from kivy.core.window import Window
 
 from home import HomeScreen
 from allmons import AllMons
+from alltypes import AllTypes
 
 class SpinnerApp(App):
     def __init__(self, **kwargs):
@@ -16,6 +17,7 @@ class SpinnerApp(App):
 
         self.manager.add_widget(HomeScreen(name="HomeScreen"))
         self.manager.add_widget(AllMons(name="AllMons"))
+        self.manager.add_widget(AllTypes(name="AllTypes"))
 
         self.manager.current = "HomeScreen"
         return self.manager

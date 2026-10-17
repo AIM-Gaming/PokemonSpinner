@@ -1,0 +1,1 @@
+            print("Errors: ", result.stderr)

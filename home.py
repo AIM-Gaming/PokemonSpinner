@@ -23,8 +23,20 @@ class HomeScreen(Screen):
         )
         self.btn_allmons.bind(on_release=self.allmons_nav)
         self.layout.add_widget(self.btn_allmons)
+        self.btn_alltypes = Button(
+            text="Types",
+            size_hint=(0.1, 0.05),
+            pos_hint={"center_x": 0.5, "center_y": 0.4}
+        )
+        self.btn_alltypes.bind(on_release=self.alltypes_nav)
+        self.layout.add_widget(self.btn_alltypes)
+        
         self.add_widget(self.layout)
 
-    def allmons_nav(self, dt):
+    def allmons_nav(self, instance):
         self.manager.transition = SlideTransition(direction="left")
         self.manager.current = "AllMons"
+
+    def alltypes_nav(self, instance):
+        self.manager.transition = SlideTransition(direction="left")
+        self.manager.current = "AllTypes"
