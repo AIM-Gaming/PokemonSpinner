@@ -1,6 +1,7 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
+from kivy.properties import NumericProperty
 
 
 class _SearchInput(TextInput):
@@ -19,6 +20,25 @@ class _SearchInput(TextInput):
             self.owner.confirm()
             return True
         return super().keyboard_on_key_down(window, keycode, text, modifiers)
+
+
+class LetterInput(TextInput):
+    """Single-letter input. Enter confirms."""
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def keyboard_on_key_down(self, window, keycode, text, modifiers):
+        if keycode[1] in ("enter", "numpadenter"):
+            self.focus = False
+            return True
+        return super().keyboard_on_key_down(window, keycode, text, modifiers)
+
+    def insert_text(self, substring, from_undo=False):
+        letters = [c for c in substring if c.isalpha()]
+        if not letters:
+            return
+        self.text = ""
+        super().insert_text(letters[0].upper(), from_undo)
 
 
 class TypeSearch(BoxLayout):

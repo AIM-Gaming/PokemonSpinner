@@ -3,6 +3,7 @@ from kivy.core.text import Label as CoreLabel
 from kivy.graphics import Color, Ellipse, Line, PushMatrix, PopMatrix, Rotate, Rectangle
 from kivy.animation import Animation
 from kivy.properties import NumericProperty, ListProperty, StringProperty
+from kivy.clock import Clock
 
 import random
 import math
@@ -27,7 +28,8 @@ class PrizeWheel(Widget):
         self._tex_cache = {}
         self._tex_fs = None
 
-        self.bind(pos=self.draw_wheel, size=self.draw_wheel)
+        self._redraw = Clock.create_trigger(self.draw_wheel)
+        self.bind(pos=self._redraw, size=self._redraw)
 
         self.draw_wheel()
         self.update_display()

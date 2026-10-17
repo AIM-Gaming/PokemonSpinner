@@ -1,5 +1,5 @@
 from kivy.app import App
-from kivy.uix.screenmanager import Screen
+from kivy.uix.screenmanager import Screen, SlideTransition
 from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.floatlayout import FloatLayout
@@ -17,7 +17,7 @@ class HomeScreen(Screen):
         )
         self.layout.add_widget(self.lbl_home)
         self.btn_allmons = Button(
-            text="All Pokemon", 
+            text="Pokemon", 
             size_hint=(0.1, 0.05),
             pos_hint={"center_x": 0.5, "center_y": 0.5}
         )
@@ -26,4 +26,5 @@ class HomeScreen(Screen):
         self.add_widget(self.layout)
 
     def allmons_nav(self, dt):
+        self.manager.transition = SlideTransition(direction="left")
         self.manager.current = "AllMons"

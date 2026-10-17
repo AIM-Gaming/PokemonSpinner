@@ -1,11 +1,11 @@
-from kivy.uix.screenmanager import Screen
+from kivy.uix.screenmanager import Screen, SlideTransition
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.spinner import Spinner
 
 from wheel import PrizeWheel
-from typesearch import TypeSearch
+from typesearch import TypeSearch, LetterInput
 
 import json
 
@@ -25,16 +25,16 @@ class AllMons(Screen):
         self.all_names = pokemon
         types = {t for mon in data for t in mon["types"]}
         
-        self.spinner = PrizeWheel(items=pokemon, pos_hint={"center_x": 0.4})
-        self.layout.add_widget(self.spinner)
+        self.wheel = PrizeWheel(items=pokemon, pos_hint={"center_x": 0.45})
+        self.layout.add_widget(self.wheel)
 
         self.display_lbl = Label(
-            text=self.spinner.display,
+            text=self.wheel.display,
             font_size=40,
             pos_hint={"center_x": 0.8, "center_y": 0.55}
         )
         self.layout.add_widget(self.display_lbl)
-        self.spinner.bind(display=self.display_lbl.setter("text"))
+        self.wheel.bind(display=self.display_lbl.setter("text"))
 
         self.spin_btn = Button(
             text="Spin!", 
@@ -47,7 +47,7 @@ class AllMons(Screen):
         self.spin_btn.bind(on_release=self.spin)
         self.layout.add_widget(self.spin_btn)
 
-        self.filters = ["types", "generation", "legendary", "mythical", "baby"]
+        self.filters = ["types", "starts with", "generation", "legendary", "mythical", "baby"]
         self.filters_spinner = Spinner(
             text="Choose a filter",
             values=[f.capitalize() for f in self.filters],
@@ -61,7 +61,7 @@ class AllMons(Screen):
         self.refresh_btn = Button(
             text="Reset Wheel",
             size_hint=(0.1, 0.05),
-            pos_hint={"center_x": 0.8, "bottom": 0.8}
+            pos_hint={"center_x": 0.8, "y": 0.2}
         )
         self.refresh_btn.bind(on_release=self.reset_wheel)
         self.layout.add_widget(self.refresh_btn)
@@ -81,6 +81,16 @@ class AllMons(Screen):
         self.gen_spinner.bind(text=self.on_generation_pick)
         self.layout.add_widget(self.gen_spinner)
 
+        self.letter_inpt = LetterInput(
+            hint_text="Enter a letter",
+            multiline=False,
+            size_hint=(None, None),
+            size=(180, 50),
+            pos_hint=self.OFFSCREEN,
+        )
+        self.letter_inpt.bind(focus=self.on_focus)
+        self.layout.add_widget(self.letter_inpt)
+
         self.home_btn = Button(
             text="Back to Home", 
             pos_hint={"center_x": 0.1, "top": 0.9},
@@ -88,7 +98,6 @@ class AllMons(Screen):
         )
         self.home_btn.bind(on_release=self.go_home)
         self.layout.add_widget(self.home_btn)
-        self.spinner.draw_wheel()  # Spinner doesn't update its pos unless it's in on_enter()
 
     # def on_enter(self):
     #     self.spinner.draw_wheel()
@@ -100,30 +109,42 @@ class AllMons(Screen):
         return pokelist  # 1025 slices
 
     def spin(self, *args):
-        self.spinner.spin()
+        self.wheel.spin()
 
     def reset_wheel(self, instance):
-        self.spinner.set_items(self.all_names)
+        self.wheel.set_items(self.all_names)
         self.gen_spinner.text = "Choose a generation"
         self.type_search.input.text = ""
+        self.letter_inpt.text = ""
         self.filters_spinner.text = "Choose a filter"
 
     def on_filter_change(self, spinner, value):
         f = value.lower()
         self.type_search.pos_hint = dict(self.OFFSCREEN)
         self.gen_spinner.pos_hint = dict(self.OFFSCREEN)
+        self.letter_inpt.pos_hint = dict(self.OFFSCREEN)
 
         if f == "types":
             self.type_search.pos_hint = dict(self.ONSCREEN)
+        elif f == "starts with":
+            self.letter_inpt.pos_hint = dict(self.ONSCREEN)
         elif f == "generation":
             self.gen_spinner.pos_hint = dict(self.ONSCREEN)
         elif f in ("legendary", "mythical", "baby"):
-            self.spinner.set_items([m["name"] for m in self.data if m[f]])
+            self.wheel.set_items([m["name"] for m in self.data if m[f]])
 
     def on_generation_pick(self, spinner, value):
         if value not in self.generations:
             return
-        self.spinner.set_items([m["name"] for m in self.data if m["generation"] == value])
+        self.wheel.set_items([m["name"] for m in self.data if m["generation"] == value])
+
+    def on_focus(self, instance, value):
+        if value or not instance.text:
+            return
+        letter = instance.text.upper()
+        names = [m["name"] for m in self.data if m["name"].upper().startswith(letter)]
+        if names:
+            self.wheel.set_items(names)
     
     def filter_type(self, pdict, ptype: str):
         ptype = ptype.lower()  # To get the lowercase types from pokemon{}
@@ -131,7 +152,8 @@ class AllMons(Screen):
 
     def apply_filter(self, instance, ptype):
         names = self.filter_type(self.data, ptype) if ptype else self.all_names
-        self.spinner.set_items(names)
+        self.wheel.set_items(names)
 
     def go_home(self, instance):
+        self.manager.transition = SlideTransition(direction="right")
         self.manager.current = "HomeScreen"
