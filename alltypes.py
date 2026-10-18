@@ -6,6 +6,7 @@ from kivy.uix.checkbox import CheckBox
 from kivy.graphics import Color, Rectangle
 
 from wheel import PrizeWheel
+from roundedbutton import RoundedButton
 
 
 class AllTypes(Screen):
@@ -13,6 +14,12 @@ class AllTypes(Screen):
         super().__init__(**kwargs)
 
         self.layout = FloatLayout()
+        with self.layout.canvas.before:
+            Color(0.1, 0.1, 0.12, 1)
+            self.bg = Rectangle(pos=self.layout.pos, size=self.layout.size)
+        self.layout.bind(pos=lambda obj, val: setattr(self.bg, 'pos', val),
+                         size=lambda obj, val: setattr(self.bg, 'size', val))
+
         self.add_widget(self.layout)
 
         types = [
@@ -34,7 +41,7 @@ class AllTypes(Screen):
         self.wheel.bind(display=self.display_lbl.setter("text"))
         self.layout.add_widget(self.display_lbl)
 
-        self.spin_btn = Button(
+        self.spin_btn = RoundedButton(
             text="Spin!",
             pos_hint={"center_x": 0.8, "center_y": self.display_lbl.pos_hint["center_y"] - 0.1},
             size_hint=(None, None),
@@ -67,7 +74,7 @@ class AllTypes(Screen):
         self.layout.add_widget(self.lbl_addany)
 
 
-        self.home_btn = Button(
+        self.home_btn = RoundedButton(
             text="Back to Home",
             pos_hint={"center_x": 0.1, "top": 0.9},
             size_hint=(None, None),

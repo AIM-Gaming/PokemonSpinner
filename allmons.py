@@ -3,22 +3,31 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.spinner import Spinner
+from kivy.graphics import Color, Rectangle
 
 from wheel import PrizeWheel
 from typesearch import TypeSearch, LetterInput
+from paths import resource_path
 
 import json
 
+from roundedbutton import RoundedButton
+
 class AllMons(Screen):
-    OFFSCREEN = {"center_x": -1, "top": 0.9}
+    OFFSCREEN = {"center_x": 2, "top": 0.9}
     ONSCREEN = {"center_x": 0.8, "top": 0.9}
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.layout = FloatLayout()
+        with self.layout.canvas.before:
+            Color(0.1, 0.1, 0.12, 1)
+            self.bg = Rectangle(pos=self.layout.pos, size=self.layout.size)
+        self.layout.bind(pos=lambda obj, val: setattr(self.bg, 'pos', val),
+                         size=lambda obj, val: setattr(self.bg, 'size', val))
         self.add_widget(self.layout)
 
-        with open("pokemon_data.json", "r", encoding="utf-8") as file:
+        with open(resource_path("pokemon_data.json"), "r", encoding="utf-8") as file:
             data = json.load(file)
         pokemon = self.load_mon_names(data)
         self.data = data
@@ -36,7 +45,7 @@ class AllMons(Screen):
         self.layout.add_widget(self.display_lbl)
         self.wheel.bind(display=self.display_lbl.setter("text"))
 
-        self.spin_btn = Button(
+        self.spin_btn = RoundedButton(
             text="Spin!", 
             size_hint=(0.1, 0.05), 
             pos_hint={
@@ -58,7 +67,7 @@ class AllMons(Screen):
         self.filters_spinner.bind(text=self.on_filter_change)
         self.layout.add_widget(self.filters_spinner)
 
-        self.refresh_btn = Button(
+        self.refresh_btn = RoundedButton(
             text="Reset Wheel",
             size_hint=(0.1, 0.05),
             pos_hint={"center_x": 0.8, "y": 0.2}
@@ -75,7 +84,7 @@ class AllMons(Screen):
             text="Choose a generation",
             values=self.generations,
             size_hint=(None, None),
-            size=(180, 50),
+            size=(250, 50),
             pos_hint=self.OFFSCREEN
         )
         self.gen_spinner.bind(text=self.on_generation_pick)
@@ -85,13 +94,13 @@ class AllMons(Screen):
             hint_text="Enter a letter",
             multiline=False,
             size_hint=(None, None),
-            size=(180, 50),
+            size=(250, 50),
             pos_hint=self.OFFSCREEN,
         )
         self.letter_inpt.bind(focus=self.on_focus)
         self.layout.add_widget(self.letter_inpt)
 
-        self.home_btn = Button(
+        self.home_btn = RoundedButton(
             text="Back to Home", 
             pos_hint={"center_x": 0.1, "top": 0.9},
             size_hint=(0.1, 0.05)
