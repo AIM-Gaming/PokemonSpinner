@@ -30,11 +30,21 @@ class AllMons(Screen):
         with open(resource_path("pokemon_data.json"), "r", encoding="utf-8") as file:
             data = json.load(file)
         pokemon = self.load_mon_names(data)
+        hummingbird_colors = [
+            (159/255, 230/255, 229/255, 1),
+            (114/255, 161/255, 125/255, 1),
+            (47/255, 131/255, 123/255, 1),
+            (56/255, 36/255, 118/255, 1),
+            (5/255, 3/255, 54/255, 1)
+        ]
         self.data = data
         self.all_names = pokemon
         types = {t for mon in data for t in mon["types"]}
         
-        self.wheel = PrizeWheel(items=pokemon, pos_hint={"center_x": 0.45})
+        self.wheel = PrizeWheel(
+            items=pokemon, pos_hint={"center_x": 0.45},
+            colors=hummingbird_colors
+        )
         self.layout.add_widget(self.wheel)
 
         self.display_lbl = Label(

@@ -29,8 +29,18 @@ class AllTypes(Screen):
             "Stellar"
         ]
         self.types = types
+        bird_colors = [
+            (232/255, 236/255, 245/255, 1),
+            (172/255, 164/255, 143/255, 1),
+            (202/255, 132/255, 96/255, 1),
+            (78/255, 107/255, 77/255, 1),
+            (234/255, 163/255, 169/255, 1)
+        ]
 
-        self.wheel = PrizeWheel(items=types, pos_hint={"center_x": 0.45})
+        self.wheel = PrizeWheel(
+            items=types, pos_hint={"center_x": 0.45},
+            colors=bird_colors
+        )
         self.layout.add_widget(self.wheel)
 
         self.display_lbl = Label(
